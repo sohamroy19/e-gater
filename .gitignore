@@ -1,3 +1,2 @@
 # build files
-*.o
-*.exe
+build
