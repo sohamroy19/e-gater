@@ -8,5 +8,6 @@ but is intended to be analogous to their actual physical design.
 The logic gates considered as basic would be the AND, OR, and NOT gates.  
   
 TODO:
-- [ ] Implement basic logic gates
-- [ ] Implement other gates using basic ones
+- [x] Implement basic logic gates
+- [x] Implement other gates using basic ones
+- [ ] Build instructions, Makefile
