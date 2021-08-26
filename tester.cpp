@@ -1,8 +1,4 @@
-#include "gates/andgate.h"
-#include "gates/orgate.h"
-#include "gates/notgate.h"
-#include "gates/norgate.h"
-#include "gates/nandgate.h"
+#include "include/logicgates.h"
 
 #include <iostream>
 

@@ -8,7 +8,8 @@ but is intended to be analogous to their actual physical design.
 The logic gates considered as basic are the AND, OR, and NOT gates.  
   
 TODO:
-- [x] Implement basic logic gates
-- [x] Implement other gates using basic ones
+- [x] Basic logic gates
+- [x] Other gates using basic ones
 - [x] CMake
+- [ ] LogicElement class
 - [ ] Build instructions

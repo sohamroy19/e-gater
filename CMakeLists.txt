@@ -10,3 +10,5 @@ add_subdirectory(gates)
 add_executable(e-gater tester.cpp)
 
 target_link_libraries(e-gater gatesLib)
+
+target_include_directories(e-gater PRIVATE include)
