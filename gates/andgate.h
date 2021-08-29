@@ -1,15 +1,15 @@
 #ifndef ANDGATE_H
 #define ANDGATE_H
 
-class AndGate {
+#include "binarydevice.h"
+
+class AndGate : public BinaryDevice {
 private:
 	bool *a, *b;
 
 public:
-	bool out;
-
 	AndGate(bool &a, bool &b);
-	void compute();
+	void compute() override;
 };
 
 #endif

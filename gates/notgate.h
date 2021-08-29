@@ -1,15 +1,15 @@
 #ifndef NOTGATE_H
 #define NOTGATE_H
 
-class NotGate {
+#include "binarydevice.h"
+
+class NotGate : public BinaryDevice {
 private:
 	bool *a;
 
 public:
-	bool out;
-
 	NotGate(bool &a);
-	void compute();
+	void compute() override;
 };
 
 #endif

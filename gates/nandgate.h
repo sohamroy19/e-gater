@@ -4,17 +4,15 @@
 #include "notgate.h"
 #include "andgate.h"
 
-class NandGate {
+class NandGate : public BinaryDevice {
 private:
 	bool *a, *b;
 	AndGate and1;
 	NotGate not2;
 
 public:
-	bool out;
-
 	NandGate(bool &a, bool &b);
-	void compute();
+	void compute() override;
 };
 
 #endif

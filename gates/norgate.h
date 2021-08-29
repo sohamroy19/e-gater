@@ -4,17 +4,15 @@
 #include "notgate.h"
 #include "orgate.h"
 
-class NorGate {
+class NorGate : public BinaryDevice {
 private:
 	bool *a, *b;
 	OrGate or1;
 	NotGate not2;
 
 public:
-	bool out;
-
 	NorGate(bool &a, bool &b);
-	void compute();
+	void compute() override;
 };
 
 #endif

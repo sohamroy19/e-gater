@@ -1,15 +1,15 @@
 #ifndef ORGATE_H
 #define ORGATE_H
 
-class OrGate {
+#include "binarydevice.h"
+
+class OrGate : public BinaryDevice {
 private:
 	bool *a, *b;
 
 public:
-	bool out;
-
 	OrGate(bool &a, bool &b);
-	void compute();
+	void compute() override;
 };
 
 #endif
