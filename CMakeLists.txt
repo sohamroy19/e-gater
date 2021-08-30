@@ -5,10 +5,11 @@ project(egater LANGUAGES CXX)
 
 # add subdirectories
 add_subdirectory(gates)
+add_subdirectory(utilities)
 
 # add the executable
-add_executable(e-gater tester.cpp)
+add_executable(demo tester.cpp)
 
-target_link_libraries(e-gater gatesLib)
+target_link_libraries(demo gatesLib utilitiesLib)
 
-target_include_directories(e-gater PRIVATE include)
+target_include_directories(demo PRIVATE include)

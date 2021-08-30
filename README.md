@@ -12,5 +12,8 @@ Objectives:
 - [x] Other gates using basic ones
 - [x] CMake
 - [x] BinaryDevice base class
-- [ ] Truth Table Helper
+- [x] Truth Table Helper
 - [ ] Build instructions
+- [ ] Documentation
+- [ ] Latches & Clock System
+- [ ] Flip-Flops
