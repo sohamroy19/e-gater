@@ -1,9 +1,12 @@
 #ifndef ANDGATE_H
 #define ANDGATE_H
 
-#include "binarydevice.h"
+#include "logicgate.h"
 
-class AndGate : public BinaryDevice {
+/**
+ * @brief	AND Gate implementation
+ */
+class AndGate : public LogicGate {
 private:
 	bool *a, *b;
 
@@ -12,4 +15,4 @@ public:
 	void compute() override;
 };
 
-#endif
+#endif /* ANDGATE_H */

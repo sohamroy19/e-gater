@@ -1,9 +1,12 @@
 #ifndef NOTGATE_H
 #define NOTGATE_H
 
-#include "binarydevice.h"
+#include "logicgate.h"
 
-class NotGate : public BinaryDevice {
+/**
+ * @brief	NOT Gate implementation
+ */
+class NotGate : public LogicGate {
 private:
 	bool *a;
 
@@ -12,4 +15,4 @@ public:
 	void compute() override;
 };
 
-#endif
+#endif /* NOTGATE_H */

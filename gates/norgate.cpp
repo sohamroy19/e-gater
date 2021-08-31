@@ -1,5 +1,4 @@
 #include "norgate.h"
-#include <iostream>
 
 NorGate::NorGate(bool &a, bool &b)
 	: a(&a), b(&b)
@@ -9,5 +8,6 @@ NorGate::NorGate(bool &a, bool &b)
 void NorGate::compute() {
 	or1.compute();
 	not2.compute();
+
 	out = not2.out;
 }

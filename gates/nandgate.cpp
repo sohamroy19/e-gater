@@ -1,5 +1,4 @@
 #include "nandgate.h"
-#include <iostream>
 
 NandGate::NandGate(bool &a, bool &b)
 	: a(&a), b(&b)
@@ -9,5 +8,6 @@ NandGate::NandGate(bool &a, bool &b)
 void NandGate::compute() {
 	and1.compute();
 	not2.compute();
+	
 	out = not2.out;
 }

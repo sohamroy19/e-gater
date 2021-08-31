@@ -1,7 +1,7 @@
 #include "truthtable.h"
 
-void gater::truthTable(BinaryDevice &device, const std::string &title,
-			   const std::vector<bool *> &inputs) {
+void gater::truthTable(LogicGate &device, const std::string &title,
+					   const std::vector<bool *> &inputs) {
 	std::string labels = " ";
 	for (int i = 0; i < inputs.size(); ++i) {
 		labels += " ";
@@ -32,4 +32,5 @@ void gater::truthTable(BinaryDevice &device, const std::string &title,
 	for (int i = 0; i < inputs.size(); ++i) {
 		*inputs[i] = originalValues[i];
 	}
+	device.compute();
 }

@@ -1,10 +1,13 @@
 #ifndef NANDGATE_H
 #define NANDGATE_H
 
-#include "notgate.h"
 #include "andgate.h"
+#include "notgate.h"
 
-class NandGate : public BinaryDevice {
+/**
+ * @brief	NAND Gate implementation
+ */
+class NandGate : public LogicGate {
 private:
 	bool *a, *b;
 	AndGate and1;
@@ -15,4 +18,4 @@ public:
 	void compute() override;
 };
 
-#endif
+#endif /* NANDGATE_H */

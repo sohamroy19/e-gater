@@ -8,8 +8,10 @@ add_subdirectory(gates)
 add_subdirectory(utilities)
 
 # add the executable
-add_executable(demo tester.cpp)
+add_executable(demo demo.cpp)
 
+# link libraries
 target_link_libraries(demo gatesLib utilitiesLib)
 
+# include directory
 target_include_directories(demo PRIVATE include)

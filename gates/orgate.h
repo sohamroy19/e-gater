@@ -1,9 +1,12 @@
 #ifndef ORGATE_H
 #define ORGATE_H
 
-#include "binarydevice.h"
+#include "logicgate.h"
 
-class OrGate : public BinaryDevice {
+/**
+ * @brief	OR Gate implementation
+ */
+class OrGate : public LogicGate {
 private:
 	bool *a, *b;
 
@@ -12,4 +15,4 @@ public:
 	void compute() override;
 };
 
-#endif
+#endif /* ORGATE_H */
