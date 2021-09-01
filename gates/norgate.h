@@ -9,12 +9,17 @@
  */
 class NorGate : public LogicGate {
 private:
-	bool *a, *b;
-	OrGate or1;
-	NotGate not2;
+	bool *a, *b;  // input pointer
+	OrGate or1;	  // internal basic logic gate
+	NotGate not2; // internal basic logic gate
 
 public:
 	NorGate(bool &a, bool &b);
+
+	/**
+	 * @brief	override that computes the output of the NOR Gate
+	 * 			from the input pointers
+	 */
 	void compute() override;
 };
 

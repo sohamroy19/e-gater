@@ -9,12 +9,17 @@
  */
 class NandGate : public LogicGate {
 private:
-	bool *a, *b;
-	AndGate and1;
-	NotGate not2;
+	bool *a, *b;  // input pointers
+	AndGate and1; // internal basic logic gate
+	NotGate not2; // internal basic logic gate
 
 public:
 	NandGate(bool &a, bool &b);
+
+	/**
+	 * @brief	override that computes the output of the NAND Gate
+	 * 			from the input pointers
+	 */
 	void compute() override;
 };
 

@@ -8,10 +8,15 @@
  */
 class NotGate : public LogicGate {
 private:
-	bool *a;
+	bool *a; // input pointer
 
 public:
 	NotGate(bool &a);
+
+	/**
+	 * @brief	override that computes the output of the NOT Gate
+	 * 			from the input pointer
+	 */
 	void compute() override;
 };
 
