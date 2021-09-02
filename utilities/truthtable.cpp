@@ -1,9 +1,9 @@
 #include "truthtable.h"
 
-void gater::truthTable(LogicGate& device, const std::string& title,
-	const std::vector<bool*>& inputs) {
+void gater::truthTable(LogicGate &device, const std::string &title,
+					   const std::vector<bool *> &inputs) {
 	std::cout << "\n"
-		<< title << " Truth Table:\n ";
+	          << title << " Truth Table:\n ";
 
 	// Label the columns. This supports up to 26 inputs, which is fine
 	// because 2^26 is already too many rows
@@ -28,6 +28,7 @@ void gater::truthTable(LogicGate& device, const std::string& title,
 		}
 		device.compute();
 
+		std::cout << " ";
 		for (int i = 0; i < inputs.size(); ++i) {
 			std::cout << " " << *inputs[i] << " |";
 		}
