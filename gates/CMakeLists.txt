@@ -5,4 +5,6 @@ add_library(
 	notgate.cpp
 	nandgate.cpp
 	norgate.cpp
+	xorgate.cpp
+	xnorgate.cpp
 )

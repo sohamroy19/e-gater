@@ -14,3 +14,5 @@
 #include "../gates/notgate.h"
 #include "../gates/nandgate.h"
 #include "../gates/norgate.h"
+#include "../gates/xorgate.h"
+#include "../gates/xnorgate.h"

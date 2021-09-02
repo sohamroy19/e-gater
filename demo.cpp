@@ -15,10 +15,10 @@ int main() {
 	// memory-safe way to push to a vector of unique_ptr to Objects
 	// note how a, b, c, d need not be initialised yet
 	testArray.push_back(std::make_unique<NandGate>(a, b));
-	testArray.push_back(std::make_unique<NorGate>(c, d));
+	testArray.push_back(std::make_unique<XnorGate>(c, d));
 
 	gater::truthTable(*testArray[0], "NAND Gate", {&a, &b});
-	gater::truthTable(*testArray[1], "NOR Gate", {&c, &d});
+	gater::truthTable(*testArray[1], "XNOR Gate", {&c, &d});
 
 	return 0;
 }
