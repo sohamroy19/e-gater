@@ -8,16 +8,16 @@
  */
 class AndGate : public LogicGate {
 private:
-	bool *a, *b; // input pointer
+    bool *a, *b; // input pointer
 
 public:
-	AndGate(bool &a, bool &b);
+    AndGate(bool &a, bool &b);
 
-	/**
+    /**
 	 * @brief	override that computes the output of the AND Gate
 	 * 			from the input pointers
 	 */
-	void compute() override;
+    void compute() override;
 };
 
 #endif /* ANDGATE_H */

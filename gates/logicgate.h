@@ -6,14 +6,14 @@
  */
 class LogicGate {
 public:
-	/// output of the LogicGate
-	bool out;
+    /// output of the LogicGate
+    bool out;
 
-	/**
+    /**
 	 * @brief	overridden to compute the output of the specific class derived
 	 * 			from LogicGate from the input pointers
 	 */
-	virtual void compute() {};
+    virtual void compute(){};
 };
 
-#endif /* LOGICGATE_H */ 
+#endif /* LOGICGATE_H */

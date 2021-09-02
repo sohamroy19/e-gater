@@ -8,11 +8,11 @@
  * to ensure that this header does not break due to future changes
  */
 
-#include "../gates/logicgate.h"
 #include "../gates/andgate.h"
-#include "../gates/orgate.h"
-#include "../gates/notgate.h"
+#include "../gates/logicgate.h"
 #include "../gates/nandgate.h"
 #include "../gates/norgate.h"
-#include "../gates/xorgate.h"
+#include "../gates/notgate.h"
+#include "../gates/orgate.h"
 #include "../gates/xnorgate.h"
+#include "../gates/xorgate.h"

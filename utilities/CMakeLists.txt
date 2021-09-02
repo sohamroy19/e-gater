@@ -1,4 +1,4 @@
 add_library(
-	utilitiesLib STATIC
-	truthtable.cpp
+    utilitiesLib STATIC
+    truthtable.cpp
 )
