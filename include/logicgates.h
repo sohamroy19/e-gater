@@ -1,5 +1,5 @@
 /**
- * @brief	External header that includes all logic gates
+ * @brief   External header that includes all logic gates
  * 
  * All headers have been included despite the fact that
  * nandgate.h also includes logicgate.h, notgate.h & andgate.h

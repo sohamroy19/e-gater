@@ -13,3 +13,8 @@ void XnorGate::compute() {
 
     out = or2.out;
 }
+
+void XnorGate::changeInputs(std::vector<bool *> newInputs) {
+    a = newInputs[0];
+    b = newInputs[1];
+}

@@ -11,3 +11,8 @@ void NandGate::compute() {
 
     out = not2.out;
 }
+
+void NandGate::changeInputs(std::vector<bool *> newInputs) {
+    a = newInputs[0];
+    b = newInputs[1];
+}

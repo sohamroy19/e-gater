@@ -5,7 +5,7 @@
 #include "orgate.h"
 
 /**
- * @brief	NOR Gate implementation
+ * @brief   NOR Gate implementation
  */
 class NorGate : public LogicGate {
 private:
@@ -17,10 +17,15 @@ public:
     NorGate(bool &a, bool &b);
 
     /**
-	 * @brief	override that computes the output of the NOR Gate
-	 * 			from the input pointers
-	 */
+     * @brief   override that computes the output of the NOR Gate
+     *          from the input pointers
+     */
     void compute() override;
+
+    /**
+     * @brief   override that changes the input lines for the NOR Gate
+     */
+    void changeInputs(std::vector<bool *> newInputs) override;
 };
 
 #endif /* NORGATE_H */

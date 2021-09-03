@@ -11,3 +11,8 @@ void NorGate::compute() {
 
     out = not2.out;
 }
+
+void NorGate::changeInputs(std::vector<bool *> newInputs) {
+    a = newInputs[0];
+    b = newInputs[1];
+}

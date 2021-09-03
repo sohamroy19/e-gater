@@ -6,3 +6,7 @@ NotGate::NotGate(bool &a)
 void NotGate::compute() {
     out = !*a;
 }
+
+void NotGate::changeInputs(std::vector<bool *> newInputs) {
+    a = newInputs[0];
+}

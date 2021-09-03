@@ -13,3 +13,8 @@ void XorGate::compute() {
 
     out = and2.out;
 }
+
+void XorGate::changeInputs(std::vector<bool *> newInputs) {
+    a = newInputs[0];
+    b = newInputs[1];
+}

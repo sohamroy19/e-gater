@@ -5,7 +5,7 @@
 #include "notgate.h"
 
 /**
- * @brief	NAND Gate implementation
+ * @brief   NAND Gate implementation
  */
 class NandGate : public LogicGate {
 private:
@@ -17,10 +17,15 @@ public:
     NandGate(bool &a, bool &b);
 
     /**
-	 * @brief	override that computes the output of the NAND Gate
-	 * 			from the input pointers
-	 */
+     * @brief   override that computes the output of the NAND Gate
+     *          from the input pointers
+     */
     void compute() override;
+
+    /**
+     * @brief   override that changes the input lines for the NAND Gate
+     */
+    void changeInputs(std::vector<bool *> newInputs) override;
 };
 
 #endif /* NANDGATE_H */

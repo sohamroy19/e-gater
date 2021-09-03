@@ -6,7 +6,7 @@
 #include "orgate.h"
 
 /**
- * @brief	XNOR Gate implementation
+ * @brief   XNOR Gate implementation
  */
 class XnorGate : public LogicGate {
 private:
@@ -19,10 +19,15 @@ public:
     XnorGate(bool &a, bool &b);
 
     /**
-	 * @brief	override that computes the output of the XNOR Gate
-	 * 			from the input pointers
-	 */
+     * @brief   override that computes the output of the XNOR Gate
+     *          from the input pointers
+     */
     void compute() override;
+
+    /**
+     * @brief   override that changes the input lines for the XNOR Gate
+     */
+    void changeInputs(std::vector<bool *> newInputs) override;
 };
 
 #endif /* XNORGATE_H */
