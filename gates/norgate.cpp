@@ -5,6 +5,11 @@ NorGate::NorGate(bool &a, bool &b)
       or1(*this->a, *this->b),
       not2(or1.out) {}
 
+NorGate::NorGate(std::vector<bool *> &ins)
+    : a(ins[0]), b(ins[1]),
+      or1(*this->a, *this->b),
+      not2(or1.out) {}
+
 void NorGate::compute() {
     or1.compute();
     not2.compute();

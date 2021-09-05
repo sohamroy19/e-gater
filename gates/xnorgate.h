@@ -18,6 +18,8 @@ private:
 public:
     XnorGate(bool &a, bool &b);
 
+    XnorGate(std::vector<bool *> &ins);
+
     /**
      * @brief   override that computes the output of the XNOR Gate
      *          from the input pointers

@@ -12,6 +12,8 @@ private:
 
 public:
     OrGate(bool &a, bool &b);
+    
+    OrGate(std::vector<bool *> &ins);
 
     /**
      * @brief   override that computes the output of the OR Gate

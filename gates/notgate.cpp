@@ -3,6 +3,9 @@
 NotGate::NotGate(bool &a)
     : a(&a) {}
 
+NotGate::NotGate(std::vector<bool *> &ins)
+    : a(ins[0]) {}
+
 void NotGate::compute() {
     out = !*a;
 }

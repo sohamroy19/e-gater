@@ -18,6 +18,8 @@ private:
 public:
     XorGate(bool &a, bool &b);
 
+    XorGate(std::vector<bool *> &ins);
+
     /**
      * @brief   override that computes the output of the XOR Gate
      *          from the input pointers

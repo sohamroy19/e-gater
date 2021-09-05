@@ -13,6 +13,8 @@ private:
 public:
     NotGate(bool &a);
 
+    NotGate(std::vector<bool *> &ins);
+
     /**
      * @brief   override that computes the output of the NOT Gate
      *          from the input pointer

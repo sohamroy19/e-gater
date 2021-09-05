@@ -15,6 +15,8 @@ private:
 
 public:
     NandGate(bool &a, bool &b);
+    
+    NandGate(std::vector<bool *> &ins);
 
     /**
      * @brief   override that computes the output of the NAND Gate

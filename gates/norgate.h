@@ -16,6 +16,8 @@ private:
 public:
     NorGate(bool &a, bool &b);
 
+    NorGate(std::vector<bool *> &ins);
+
     /**
      * @brief   override that computes the output of the NOR Gate
      *          from the input pointers

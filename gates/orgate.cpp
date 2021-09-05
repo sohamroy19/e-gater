@@ -3,6 +3,9 @@
 OrGate::OrGate(bool &a, bool &b)
     : a(&a), b(&b) {}
 
+OrGate::OrGate(std::vector<bool *> &ins)
+    : a(ins[0]), b(ins[1]) {}
+
 void OrGate::compute() {
     out = *a | *b;
 }

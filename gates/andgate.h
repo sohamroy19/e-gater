@@ -12,6 +12,8 @@ private:
 
 public:
     AndGate(bool &a, bool &b);
+    
+    AndGate(std::vector<bool *> &ins);
 
     /**
      * @brief   override that computes the output of the AND Gate
