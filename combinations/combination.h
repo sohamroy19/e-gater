@@ -8,7 +8,7 @@
 #include <vector>
 
 /**
- * @brief   Generic base class that can represent any logic gate
+ * @brief   Generic base class that can represent any combination of LogicGates
  */
 class Combination {
 public:

@@ -1,4 +1,4 @@
-#include "include/logicgates.h"
+#include "include/combinations.h"
 #include "include/utilities.h"
 
 #include <iostream>
@@ -19,6 +19,15 @@ int main() {
 
     gater::truthTable(*testArray[0], "NAND Gate", {&a, &b});
     gater::truthTable(*testArray[1], "XNOR Gate", {&c, &d});
+
+    // another way would be to use a Combination
+    Combination circuit;
+
+    circuit.addGate<NorGate>({&a, &b});
+    circuit.addGate<XorGate>({&c, &d});
+
+    gater::truthTable(*circuit.gates[0], "NOR Gate", {&a, &b});
+    gater::truthTable(*circuit.gates[1], "XOR Gate", {&c, &d});
 
     return 0;
 }
