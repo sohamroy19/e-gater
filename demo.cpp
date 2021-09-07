@@ -29,5 +29,7 @@ int main() {
     gater::truthTable(*circuit.gates[0], "NOR Gate", {&a, &b});
     gater::truthTable(*circuit.gates[1], "XOR Gate", {&c, &d});
 
+    gater::truthTable(circuit, "Combination", circuit.gates[1]->out);
+
     return 0;
 }

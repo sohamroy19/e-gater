@@ -22,6 +22,6 @@ Objectives:
 - [x] Truth Table Helper
 - [x] Doxygen-Style Documentation
 - [x] Build instructions
-- [ ] General Combination base class
+- [x] General Combination base class
 - [ ] Latches & Clock System
 - [ ] Flip-Flops
