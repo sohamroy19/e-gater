@@ -34,6 +34,8 @@ public:
     template <class T>
     void addGate(std::vector<bool *> ins, bool addToIn = true, bool addToOut = false);
 
+    void addGate(std::unique_ptr<LogicGate> gate, bool addToOut = false);
+
     void insertInput(bool *input);
 };
 

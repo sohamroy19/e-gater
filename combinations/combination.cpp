@@ -21,6 +21,14 @@ void Combination::addGate(std::vector<bool *> ins, bool addToIn, bool addToOut) 
     }
 }
 
+void Combination::addGate(std::unique_ptr<LogicGate> gate, bool addToOut) {
+    gates.push_back(std::move(gate));
+
+    if (addToOut) {
+        outputs.push_back(&gates.back()->out);
+    }
+}
+
 void Combination::insertInput(bool *input) {
     if (inputSet.find(input) == inputSet.end()) {
         inputSet.insert(input);
