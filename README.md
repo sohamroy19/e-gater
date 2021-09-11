@@ -23,5 +23,6 @@ Objectives:
 - [x] Doxygen-Style Documentation
 - [x] Build instructions
 - [x] General Combination base class
+- [ ] Complete documentation and demo
 - [ ] Latches & Clock System
 - [ ] Flip-Flops
