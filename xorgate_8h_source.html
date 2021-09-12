@@ -84,23 +84,24 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="class_and_gate.html">AndGate</a> and2;    <span class="comment">// internal basic logic gate</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_xor_gate.html">XorGate</a>(<span class="keywordtype">bool</span> &amp;a, <span class="keywordtype">bool</span> &amp;b);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_xor_gate.html">XorGate</a>(std::vector&lt;bool *&gt; &amp;ins);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xor_gate.html#a09b3313af3ea0d410673e95e661aed93">compute</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xor_gate.html#a1f8d6ccf8c6a6640cacd43a559a4e511">changeInputs</a>(std::vector&lt;bool *&gt; newInputs) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">/* XORGATE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="class_xor_gate.html#aae6406c247fcb38fc1601b45469bf4dd">XorGate</a>(<span class="keywordtype">bool</span> &amp;a, <span class="keywordtype">bool</span> &amp;b);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_xor_gate.html#aae6406c247fcb38fc1601b45469bf4dd">XorGate</a>(<span class="keyword">const</span> std::vector&lt;bool *&gt; &amp;ins);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xor_gate.html#a09b3313af3ea0d410673e95e661aed93">compute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_xor_gate.html#a060db4bf360b026238cea9b4ba37b826">changeInputs</a>(<span class="keyword">const</span> std::vector&lt;bool *&gt; &amp;newInputs) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">/* XORGATE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclass_and_gate_html"><div class="ttname"><a href="class_and_gate.html">AndGate</a></div><div class="ttdoc">AND Gate implementation.</div><div class="ttdef"><b>Definition:</b> andgate.h:9</div></div>
 <div class="ttc" id="aclass_logic_gate_html"><div class="ttname"><a href="class_logic_gate.html">LogicGate</a></div><div class="ttdoc">Generic base class that can represent any logic gate.</div><div class="ttdef"><b>Definition:</b> logicgate.h:9</div></div>
 <div class="ttc" id="aclass_nand_gate_html"><div class="ttname"><a href="class_nand_gate.html">NandGate</a></div><div class="ttdoc">NAND Gate implementation.</div><div class="ttdef"><b>Definition:</b> nandgate.h:10</div></div>
 <div class="ttc" id="aclass_or_gate_html"><div class="ttname"><a href="class_or_gate.html">OrGate</a></div><div class="ttdoc">OR Gate implementation.</div><div class="ttdef"><b>Definition:</b> orgate.h:9</div></div>
 <div class="ttc" id="aclass_xor_gate_html"><div class="ttname"><a href="class_xor_gate.html">XorGate</a></div><div class="ttdoc">XOR Gate implementation.</div><div class="ttdef"><b>Definition:</b> xorgate.h:11</div></div>
-<div class="ttc" id="aclass_xor_gate_html_a09b3313af3ea0d410673e95e661aed93"><div class="ttname"><a href="class_xor_gate.html#a09b3313af3ea0d410673e95e661aed93">XorGate::compute</a></div><div class="ttdeci">void compute() override</div><div class="ttdoc">override that computes the output of the XOR Gate from the input pointers</div><div class="ttdef"><b>Definition:</b> xorgate.cpp:15</div></div>
-<div class="ttc" id="aclass_xor_gate_html_a1f8d6ccf8c6a6640cacd43a559a4e511"><div class="ttname"><a href="class_xor_gate.html#a1f8d6ccf8c6a6640cacd43a559a4e511">XorGate::changeInputs</a></div><div class="ttdeci">void changeInputs(std::vector&lt; bool * &gt; newInputs) override</div><div class="ttdoc">override that changes the input lines for the XOR Gate</div><div class="ttdef"><b>Definition:</b> xorgate.cpp:23</div></div>
+<div class="ttc" id="aclass_xor_gate_html_a060db4bf360b026238cea9b4ba37b826"><div class="ttname"><a href="class_xor_gate.html#a060db4bf360b026238cea9b4ba37b826">XorGate::changeInputs</a></div><div class="ttdeci">void changeInputs(const std::vector&lt; bool * &gt; &amp;newInputs) override</div><div class="ttdoc">Override that changes the input lines for the XOR Gate.</div><div class="ttdef"><b>Definition:</b> xorgate.cpp:23</div></div>
+<div class="ttc" id="aclass_xor_gate_html_a09b3313af3ea0d410673e95e661aed93"><div class="ttname"><a href="class_xor_gate.html#a09b3313af3ea0d410673e95e661aed93">XorGate::compute</a></div><div class="ttdeci">void compute() override</div><div class="ttdoc">Override that computes the output of the XOR Gate from the input pointers.</div><div class="ttdef"><b>Definition:</b> xorgate.cpp:15</div></div>
+<div class="ttc" id="aclass_xor_gate_html_aae6406c247fcb38fc1601b45469bf4dd"><div class="ttname"><a href="class_xor_gate.html#aae6406c247fcb38fc1601b45469bf4dd">XorGate::XorGate</a></div><div class="ttdeci">XorGate(bool &amp;a, bool &amp;b)</div><div class="ttdoc">Construct a new XorGate object with passed inputs.</div><div class="ttdef"><b>Definition:</b> xorgate.cpp:3</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

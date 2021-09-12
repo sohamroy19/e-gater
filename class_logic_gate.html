@@ -93,24 +93,24 @@ Inheritance diagram for LogicGate:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab88229a99577e2bdbc29ad2cc3e92b56"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logic_gate.html#ab88229a99577e2bdbc29ad2cc3e92b56">compute</a> ()</td></tr>
-<tr class="memdesc:ab88229a99577e2bdbc29ad2cc3e92b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">overridden to compute the output of the specific class derived from <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> from the input pointers  <a href="class_logic_gate.html#ab88229a99577e2bdbc29ad2cc3e92b56">More...</a><br /></td></tr>
+<tr class="memdesc:ab88229a99577e2bdbc29ad2cc3e92b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden to compute the output of the specific class derived from <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> from the input pointers.  <a href="class_logic_gate.html#ab88229a99577e2bdbc29ad2cc3e92b56">More...</a><br /></td></tr>
 <tr class="separator:ab88229a99577e2bdbc29ad2cc3e92b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fc01f6e0850d9a54e274c54fe97ab1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logic_gate.html#a36fc01f6e0850d9a54e274c54fe97ab1">changeInputs</a> (std::vector&lt; bool * &gt;)</td></tr>
-<tr class="memdesc:a36fc01f6e0850d9a54e274c54fe97ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">overridden to change the input line(s) for the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a>  <a href="class_logic_gate.html#a36fc01f6e0850d9a54e274c54fe97ab1">More...</a><br /></td></tr>
-<tr class="separator:a36fc01f6e0850d9a54e274c54fe97ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292de8678888941168ba3419128e0508"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_logic_gate.html#a292de8678888941168ba3419128e0508">changeInputs</a> (const std::vector&lt; bool * &gt; &amp;newInputs)</td></tr>
+<tr class="memdesc:a292de8678888941168ba3419128e0508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden to change the input line(s) for the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a>.  <a href="class_logic_gate.html#a292de8678888941168ba3419128e0508">More...</a><br /></td></tr>
+<tr class="separator:a292de8678888941168ba3419128e0508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a17e84036247b812d6d12e86966967145"><td class="memItemLeft" align="right" valign="top"><a id="a17e84036247b812d6d12e86966967145" name="a17e84036247b812d6d12e86966967145"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>out</b></td></tr>
-<tr class="memdesc:a17e84036247b812d6d12e86966967145"><td class="mdescLeft">&#160;</td><td class="mdescRight">output of the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> <br /></td></tr>
+<tr class="memdesc:a17e84036247b812d6d12e86966967145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output of the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a>. <br /></td></tr>
 <tr class="separator:a17e84036247b812d6d12e86966967145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Generic base class that can represent any logic gate. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a36fc01f6e0850d9a54e274c54fe97ab1" name="a36fc01f6e0850d9a54e274c54fe97ab1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36fc01f6e0850d9a54e274c54fe97ab1">&#9670;&nbsp;</a></span>changeInputs()</h2>
+<a id="a292de8678888941168ba3419128e0508" name="a292de8678888941168ba3419128e0508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292de8678888941168ba3419128e0508">&#9670;&nbsp;</a></span>changeInputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,8 +121,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>out</b></td></tr>
         <tr>
           <td class="memname">virtual void LogicGate::changeInputs </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; bool * &gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; bool * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>newInputs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -133,9 +133,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>out</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>overridden to change the input line(s) for the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> </p>
+<p>Overridden to change the input line(s) for the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newInputs</td><td>New inputs vector </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented in <a class="el" href="class_and_gate.html#a4765f4270ee51674749641252959ea30">AndGate</a>, <a class="el" href="class_nand_gate.html#a3fc33270cc5421c88c1f4cbf6e1b4db1">NandGate</a>, <a class="el" href="class_nor_gate.html#a48b23994a791f0e48de315b7ea888d18">NorGate</a>, <a class="el" href="class_not_gate.html#ad6f5ea02102790c7e5975ab751ee12e5">NotGate</a>, <a class="el" href="class_or_gate.html#abb6e1f9a6ed3750e0d7f439f66b01dae">OrGate</a>, <a class="el" href="class_xnor_gate.html#a273a1a0aa3105bd125343e257fefdc76">XnorGate</a>, and <a class="el" href="class_xor_gate.html#a1f8d6ccf8c6a6640cacd43a559a4e511">XorGate</a>.</p>
+<p>Reimplemented in <a class="el" href="class_and_gate.html#a94444d49184ddfb2d26cc506f96eb402">AndGate</a>, <a class="el" href="class_nand_gate.html#a5330447094f1a4864a67e9453e2682b5">NandGate</a>, <a class="el" href="class_nor_gate.html#aaf522c13a6710aac277191db339f93c3">NorGate</a>, <a class="el" href="class_not_gate.html#a3865d19c1d6dc3269d73198ff6db9441">NotGate</a>, <a class="el" href="class_or_gate.html#a43f6e695626715ac860f9364e771d9cf">OrGate</a>, <a class="el" href="class_xnor_gate.html#a2f4e83ae7cd21b985b3d92d26eeda025">XnorGate</a>, and <a class="el" href="class_xor_gate.html#a060db4bf360b026238cea9b4ba37b826">XorGate</a>.</p>
 
 </div>
 </div>
@@ -162,7 +168,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>out</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>overridden to compute the output of the specific class derived from <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> from the input pointers </p>
+<p>Overridden to compute the output of the specific class derived from <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> from the input pointers. </p>
 
 <p>Reimplemented in <a class="el" href="class_and_gate.html#a3f829da5b5e33f22949ddb3a79ae0c28">AndGate</a>, <a class="el" href="class_nand_gate.html#a7a7638d26afb4d0198b041c5164f2306">NandGate</a>, <a class="el" href="class_nor_gate.html#ab6db60a7374841246325b602e320ff99">NorGate</a>, <a class="el" href="class_not_gate.html#a44d1d68884ae062059d03fc16e28d670">NotGate</a>, <a class="el" href="class_or_gate.html#a747625e406313febbd6b865c3f7aaa4f">OrGate</a>, <a class="el" href="class_xnor_gate.html#a6099c5c7fdc92c94f50bb4442da1d5c7">XnorGate</a>, and <a class="el" href="class_xor_gate.html#a09b3313af3ea0d410673e95e661aed93">XorGate</a>.</p>
 
