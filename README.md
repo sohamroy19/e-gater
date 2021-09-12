@@ -8,8 +8,10 @@ but is intended to be analogous to their actual physical design.
 The logic gates considered as basic are the AND, OR, and NOT gates.  
 All other circuit elements have been builtt using them.  
 
-The project has [Doxygen](http://www.doxygen.nl/)-style Documentation, and  
-uses [CMake](https://cmake.org/) to build automatically.
+The repository has been configured with GitHub Actions to auto-generate  
+[Doxygen](http://www.doxygen.nl/)-style Documentation with each push or pull request [here](https://sohamroy19.github.io/e-gater/).
+
+Use [CMake](https://cmake.org/) to build automatically.
 - Run CMake with the [CMakeLists.txt](CMakeLists.txt) in the root directory
 - Run the `make` command to build the libraries and executables
 - Execute demo.exe in the generated build/ subdirectory

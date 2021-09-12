@@ -6,7 +6,7 @@ XorGate::XorGate(bool &a, bool &b)
       or1b(*this->a, *this->b),
       and2(nand1a.out, or1b.out) {}
 
-XorGate::XorGate(std::vector<bool *> &ins)
+XorGate::XorGate(const std::vector<bool *> &ins)
     : a(ins[0]), b(ins[1]),
       nand1a(*this->a, *this->b),
       or1b(*this->a, *this->b),
@@ -20,7 +20,7 @@ void XorGate::compute() {
     out = and2.out;
 }
 
-void XorGate::changeInputs(std::vector<bool *> newInputs) {
+void XorGate::changeInputs(const std::vector<bool *> &newInputs) {
     a = newInputs[0];
     b = newInputs[1];
 }

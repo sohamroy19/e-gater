@@ -16,20 +16,32 @@ private:
     AndGate and2;    // internal basic logic gate
 
 public:
+    /**
+     * @brief   Construct a new XorGate object with passed inputs
+     * 
+     * @param   a,b Input references
+     */
     XorGate(bool &a, bool &b);
 
-    XorGate(std::vector<bool *> &ins);
+    /**
+     * @brief   Construct a new XorGate object with passed inputs
+     * 
+     * @param   ins Input vector
+     */
+    XorGate(const std::vector<bool *> &ins);
 
     /**
-     * @brief   override that computes the output of the XOR Gate
+     * @brief   Override that computes the output of the XOR Gate
      *          from the input pointers
      */
     void compute() override;
 
     /**
-     * @brief   override that changes the input lines for the XOR Gate
+     * @brief   Override that changes the input lines for the XOR Gate
+     * 
+     * @param   newInputs New inputs vector
      */
-    void changeInputs(std::vector<bool *> newInputs) override;
+    void changeInputs(const std::vector<bool *> &newInputs) override;
 };
 
 #endif /* XORGATE_H */

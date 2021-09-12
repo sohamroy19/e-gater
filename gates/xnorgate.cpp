@@ -6,7 +6,7 @@ XnorGate::XnorGate(bool &a, bool &b)
       nor1b(*this->a, *this->b),
       or2(and1a.out, nor1b.out) {}
 
-XnorGate::XnorGate(std::vector<bool *> &ins)
+XnorGate::XnorGate(const std::vector<bool *> &ins)
     : a(ins[0]), b(ins[1]),
       and1a(*this->a, *this->b),
       nor1b(*this->a, *this->b),
@@ -20,7 +20,7 @@ void XnorGate::compute() {
     out = or2.out;
 }
 
-void XnorGate::changeInputs(std::vector<bool *> newInputs) {
+void XnorGate::changeInputs(const std::vector<bool *> &newInputs) {
     a = newInputs[0];
     b = newInputs[1];
 }

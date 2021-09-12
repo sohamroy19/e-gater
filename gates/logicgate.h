@@ -8,19 +8,21 @@
  */
 class LogicGate {
 public:
-    /// output of the LogicGate
+    /// Output of the LogicGate
     bool out;
 
     /**
-     * @brief   overridden to compute the output of the specific class derived
+     * @brief   Overridden to compute the output of the specific class derived
      *          from LogicGate from the input pointers
      */
     virtual void compute(){};
 
     /**
-     * @brief   overridden to change the input line(s) for the LogicGate
+     * @brief   Overridden to change the input line(s) for the LogicGate
+     * 
+     * @param   newInputs New inputs vector
      */
-    virtual void changeInputs(std::vector<bool *>){};
+    virtual void changeInputs(const std::vector<bool *> &newInputs){};
 };
 
 #endif /* LOGICGATE_H */

@@ -4,7 +4,7 @@ void gater::truthTable(LogicGate &device, const std::string &title,
                        const std::vector<bool *> &inputs) {
     std::cout << title << " Truth Table:\n ";
 
-    // Label the columns. This supports up to 26 inputs, which is fine
+    // label the columns. this supports up to 26 inputs, which is fine
     // because 2^26 is already too many rows
     for (int i = 0; i < inputs.size(); ++i) {
         std::cout << " " << char('a' + i) << " |";
@@ -26,7 +26,7 @@ void gater::truthTable(LogicGate &device, const std::string &title,
     // this will support atleast 32, which is >26.
     for (int i = 0; i < (1 << inputs.size()); ++i) {
         for (int j = 0; j < inputs.size(); ++j) {
-            *inputs[j] = i & (1 << j);
+            *inputs[j] = i & (1 << (inputs.size() - 1 - j));
         }
         device.compute();
 
@@ -51,7 +51,7 @@ void gater::truthTable(LogicGate &device, const std::string &title,
 void gater::truthTable(Combination &combo, const std::string &title, const bool &out) {
     std::cout << title << " Truth Table:\n ";
 
-    // Label the columns. This supports up to 26 inputs, which is fine
+    // label the columns. this supports up to 26 inputs, which is fine
     // because 2^26 is already too many rows
     for (int i = 0; i < combo.inputs.size(); ++i) {
         std::cout << " " << char('a' + i) << " |";

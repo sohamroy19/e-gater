@@ -16,20 +16,32 @@ private:
     OrGate or2;    // internal basic logic gate
 
 public:
+    /**
+     * @brief   Construct a new XnorGate object with passed inputs
+     * 
+     * @param   a,b Input references
+     */
     XnorGate(bool &a, bool &b);
 
-    XnorGate(std::vector<bool *> &ins);
+    /**
+     * @brief   Construct a new XnorGate object with passed inputs
+     * 
+     * @param   ins Inputs vector
+     */
+    XnorGate(const std::vector<bool *> &ins);
 
     /**
-     * @brief   override that computes the output of the XNOR Gate
+     * @brief   Override that computes the output of the XNOR Gate
      *          from the input pointers
      */
     void compute() override;
 
     /**
-     * @brief   override that changes the input lines for the XNOR Gate
+     * @brief   Override that changes the input lines for the XNOR Gate
+     * 
+     * @param   newInputs New inputs vector
      */
-    void changeInputs(std::vector<bool *> newInputs) override;
+    void changeInputs(const std::vector<bool *> &newInputs) override;
 };
 
 #endif /* XNORGATE_H */

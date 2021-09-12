@@ -4,27 +4,39 @@
 #include "logicgate.h"
 
 /**
- * @brief   AND Gate implementation
+ * @brief AND Gate implementation
  */
 class AndGate : public LogicGate {
 private:
-    bool *a, *b; // input pointer
+    bool *a, *b; // input pointers
 
 public:
+    /**
+     * @brief   Construct a new AndGate object with passed inputs
+     * 
+     * @param   a,b Input references
+     */
     AndGate(bool &a, bool &b);
-    
-    AndGate(std::vector<bool *> &ins);
 
     /**
-     * @brief   override that computes the output of the AND Gate
+     * @brief   Construct a new AndGate object with passed inputs
+     * 
+     * @param   ins Inputs vector
+     */
+    AndGate(const std::vector<bool *> &ins);
+
+    /**
+     * @brief   Override that computes the output of the AND Gate
      *          from the input pointers
      */
     void compute() override;
 
     /**
-     * @brief   override that changes the input lines for the AND Gate
+     * @brief   Override that changes the input lines for the AND Gate
+     * 
+     * @param   newInputs New inputs vector
      */
-    void changeInputs(std::vector<bool *> newInputs) override;
+    void changeInputs(const std::vector<bool *> &newInputs) override;
 };
 
 #endif /* ANDGATE_H */

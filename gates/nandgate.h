@@ -14,20 +14,32 @@ private:
     NotGate not2; // internal basic logic gate
 
 public:
+    /**
+     * @brief   Construct a new NandGate object with passed inputs
+     * 
+     * @param   a,b Input references
+     */
     NandGate(bool &a, bool &b);
-    
-    NandGate(std::vector<bool *> &ins);
 
     /**
-     * @brief   override that computes the output of the NAND Gate
+     * @brief   Construct a new NandGate object with passed inputs
+     * 
+     * @param   ins Inputs vector
+     */
+    NandGate(const std::vector<bool *> &ins);
+
+    /**
+     * @brief   Override that computes the output of the NAND Gate
      *          from the input pointers
      */
     void compute() override;
 
     /**
-     * @brief   override that changes the input lines for the NAND Gate
+     * @brief   Override that changes the input lines for the NAND Gate
+     * 
+     * @param   newInputs New inputs vector
      */
-    void changeInputs(std::vector<bool *> newInputs) override;
+    void changeInputs(const std::vector<bool *> &newInputs) override;
 };
 
 #endif /* NANDGATE_H */

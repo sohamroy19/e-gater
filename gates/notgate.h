@@ -11,20 +11,32 @@ private:
     bool *a; // input pointer
 
 public:
+    /**
+     * @brief   Construct a new Not Gate object with passed input
+     * 
+     * @param   a Input reference
+     */
     NotGate(bool &a);
 
-    NotGate(std::vector<bool *> &ins);
+    /**
+     * @brief   Construct a new NotGate object with passed input
+     * 
+     * @param   ins Input vector
+     */
+    NotGate(const std::vector<bool *> &ins);
 
     /**
-     * @brief   override that computes the output of the NOT Gate
+     * @brief   Override that computes the output of the NOT Gate
      *          from the input pointer
      */
     void compute() override;
 
     /**
-     * @brief   override that changes the input lines for the NOT Gate
+     * @brief   Override that changes the input lines for the NOT Gate
+     * 
+     * @param   newInputs New inputs vector
      */
-    void changeInputs(std::vector<bool *> newInputs) override;
+    void changeInputs(const std::vector<bool *> &newInputs) override;
 };
 
 #endif /* NOTGATE_H */

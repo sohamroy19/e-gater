@@ -8,23 +8,35 @@
  */
 class OrGate : public LogicGate {
 private:
-    bool *a, *b; // input pointer
+    bool *a, *b; // input pointers
 
 public:
+    /**
+     * @brief   Construct a new Or Gate object with passed inputs
+     * 
+     * @param   a,b Input references
+     */
     OrGate(bool &a, bool &b);
     
-    OrGate(std::vector<bool *> &ins);
+    /**
+     * @brief   Construct a new Or Gate object with passed inputs
+     * 
+     * @param   ins Inputs vector
+     */
+    OrGate(const std::vector<bool *> &ins);
 
     /**
-     * @brief   override that computes the output of the OR Gate
+     * @brief   Override that computes the output of the OR Gate
      *          from the input pointers
      */
     void compute() override;
 
     /**
-     * @brief   override that changes the input lines for the OR Gate
+     * @brief   Override that changes the input lines for the OR Gate
+     * 
+     * @param   newInputs New inputs vector
      */
-    void changeInputs(std::vector<bool *> newInputs) override;
+    void changeInputs(const std::vector<bool *> &newInputs) override;
 };
 
 #endif /* ORGATE_H */

@@ -1,2 +1,5 @@
+# Build directory
+build
+
+# Doxygen generated files
 html
-latex
