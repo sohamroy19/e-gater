@@ -79,37 +79,153 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8dcd06bafeeded981f2aad2a495ebf8"><td class="memItemLeft" align="right" valign="top"><a id="ae8dcd06bafeeded981f2aad2a495ebf8" name="ae8dcd06bafeeded981f2aad2a495ebf8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>compute</b> ()</td></tr>
-<tr class="memdesc:ae8dcd06bafeeded981f2aad2a495ebf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">overridden to compute the output of the specific class derived from <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a> from the input pointers <br /></td></tr>
+<tr class="memdesc:ae8dcd06bafeeded981f2aad2a495ebf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden to compute the output of the specific class derived from <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a> from the input pointers. <br /></td></tr>
 <tr class="separator:ae8dcd06bafeeded981f2aad2a495ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8dace5203cf486807878e3b24789ceb"><td class="memTemplParams" colspan="2"><a id="ae8dace5203cf486807878e3b24789ceb" name="ae8dace5203cf486807878e3b24789ceb"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:ae8dace5203cf486807878e3b24789ceb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addGate</b> (std::vector&lt; bool * &gt; ins, bool addToIn=true, bool addToOut=false)</td></tr>
+<tr class="memitem:ae8dace5203cf486807878e3b24789ceb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae8dace5203cf486807878e3b24789ceb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_combination.html#ae8dace5203cf486807878e3b24789ceb">addGate</a> (std::vector&lt; bool * &gt; ins, bool addToIn=true, bool addToOut=false)</td></tr>
+<tr class="memdesc:ae8dace5203cf486807878e3b24789ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> object with passed inputs and adds it to the <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a>.  <a href="class_combination.html#ae8dace5203cf486807878e3b24789ceb">More...</a><br /></td></tr>
 <tr class="separator:ae8dace5203cf486807878e3b24789ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cfe76a84b657485ecd02fbe6690a73"><td class="memItemLeft" align="right" valign="top"><a id="a07cfe76a84b657485ecd02fbe6690a73" name="a07cfe76a84b657485ecd02fbe6690a73"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addGate</b> (std::unique_ptr&lt; <a class="el" href="class_logic_gate.html">LogicGate</a> &gt; gate, bool addToOut=false)</td></tr>
+<tr class="memitem:a07cfe76a84b657485ecd02fbe6690a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_combination.html#a07cfe76a84b657485ecd02fbe6690a73">addGate</a> (std::unique_ptr&lt; <a class="el" href="class_logic_gate.html">LogicGate</a> &gt; gate, bool addToOut=false)</td></tr>
+<tr class="memdesc:a07cfe76a84b657485ecd02fbe6690a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the passed <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> smart pointer into the combination.  <a href="class_combination.html#a07cfe76a84b657485ecd02fbe6690a73">More...</a><br /></td></tr>
 <tr class="separator:a07cfe76a84b657485ecd02fbe6690a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7ab83d9890c1cee27abfc0147ba1d24"><td class="memItemLeft" align="right" valign="top"><a id="ab7ab83d9890c1cee27abfc0147ba1d24" name="ab7ab83d9890c1cee27abfc0147ba1d24"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insertInput</b> (bool *input)</td></tr>
+<tr class="memitem:ab7ab83d9890c1cee27abfc0147ba1d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_combination.html#ab7ab83d9890c1cee27abfc0147ba1d24">insertInput</a> (bool *input)</td></tr>
+<tr class="memdesc:ab7ab83d9890c1cee27abfc0147ba1d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends input to vector inputs if not already present in it.  <a href="class_combination.html#ab7ab83d9890c1cee27abfc0147ba1d24">More...</a><br /></td></tr>
 <tr class="separator:ab7ab83d9890c1cee27abfc0147ba1d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a91a77059350eb1e9d57bad54adfcdc6d"><td class="memItemLeft" align="right" valign="top"><a id="a91a77059350eb1e9d57bad54adfcdc6d" name="a91a77059350eb1e9d57bad54adfcdc6d"></a>
 std::vector&lt; bool * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="memdesc:a91a77059350eb1e9d57bad54adfcdc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">input pointers <br /></td></tr>
+<tr class="memdesc:a91a77059350eb1e9d57bad54adfcdc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input pointers, does not contain duplicates and maintains order of insertion. <br /></td></tr>
 <tr class="separator:a91a77059350eb1e9d57bad54adfcdc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b238f2c681dcdc4d7bb0027229aeca"><td class="memItemLeft" align="right" valign="top"><a id="aa1b238f2c681dcdc4d7bb0027229aeca" name="aa1b238f2c681dcdc4d7bb0027229aeca"></a>
 std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_logic_gate.html">LogicGate</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gates</b></td></tr>
-<tr class="memdesc:aa1b238f2c681dcdc4d7bb0027229aeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal gates of the <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a> <br /></td></tr>
+<tr class="memdesc:aa1b238f2c681dcdc4d7bb0027229aeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal gates of the <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a>. <br /></td></tr>
 <tr class="separator:aa1b238f2c681dcdc4d7bb0027229aeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46fc16b9a89bf471addd2cdfa7fed379"><td class="memItemLeft" align="right" valign="top"><a id="a46fc16b9a89bf471addd2cdfa7fed379" name="a46fc16b9a89bf471addd2cdfa7fed379"></a>
 std::vector&lt; bool * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
-<tr class="memdesc:a46fc16b9a89bf471addd2cdfa7fed379"><td class="mdescLeft">&#160;</td><td class="mdescRight">outputs of the <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a> <br /></td></tr>
+<tr class="memdesc:a46fc16b9a89bf471addd2cdfa7fed379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs of the <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a>. <br /></td></tr>
 <tr class="separator:a46fc16b9a89bf471addd2cdfa7fed379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Generic base class that can represent any combination of LogicGates. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a07cfe76a84b657485ecd02fbe6690a73" name="a07cfe76a84b657485ecd02fbe6690a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cfe76a84b657485ecd02fbe6690a73">&#9670;&nbsp;</a></span>addGate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Combination::addGate </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_logic_gate.html">LogicGate</a> &gt;&#160;</td>
+          <td class="paramname"><em>gate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addToOut</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves the passed <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> smart pointer into the combination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate</td><td>Unique pointer to a <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> implementation </td></tr>
+    <tr><td class="paramname">addToOut</td><td>Whether to add output of gate to vector outputs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8dace5203cf486807878e3b24789ceb" name="ae8dace5203cf486807878e3b24789ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8dace5203cf486807878e3b24789ceb">&#9670;&nbsp;</a></span>addGate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Combination::addGate </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; bool * &gt;&#160;</td>
+          <td class="paramname"><em>ins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addToIn</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addToOut</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> object with passed inputs and adds it to the <a class="el" href="class_combination.html" title="Generic base class that can represent any combination of LogicGates.">Combination</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Specific <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> implementation to be constructed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ins</td><td>Inputs for the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> </td></tr>
+    <tr><td class="paramname">addToIn</td><td>Whether to add passed inputs to vector inputs </td></tr>
+    <tr><td class="paramname">addToOut</td><td>Whether to add output of the <a class="el" href="class_logic_gate.html" title="Generic base class that can represent any logic gate.">LogicGate</a> to vector outputs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7ab83d9890c1cee27abfc0147ba1d24" name="ab7ab83d9890c1cee27abfc0147ba1d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7ab83d9890c1cee27abfc0147ba1d24">&#9670;&nbsp;</a></span>insertInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Combination::insertInput </td>
+          <td>(</td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends input to vector inputs if not already present in it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>An input to the combination </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>combinations/<a class="el" href="combination_8h_source.html">combination.h</a></li>
 <li>combinations/combination.cpp</li>
 </ul>
