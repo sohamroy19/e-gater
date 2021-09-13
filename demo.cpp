@@ -22,11 +22,11 @@ int main() {
 
     // another way would be to use a Combination
     Combination circuit;
-    circuit.addGate<NorGate>({&a, &b});
+    circuit.addGate<XorGate>({&a, &b});
     circuit.addGate<XorGate>({&c, &circuit.gates[0]->out}, false, true);
     circuit.insertInput(&c);
 
-    gater::truthTable(circuit, "Combination (a|b)^c", *circuit.outputs[0]);
+    gater::truthTable(circuit, "Combination (a^b^c)");
 
     return 0;
 }

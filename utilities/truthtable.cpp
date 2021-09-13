@@ -48,7 +48,7 @@ void gater::truthTable(LogicGate &device, const std::string &title,
     device.compute();
 }
 
-void gater::truthTable(Combination &combo, const std::string &title, const bool &out) {
+void gater::truthTable(Combination &combo, const std::string &title, int outIndex) {
     std::cout << title << " Truth Table:\n ";
 
     // label the columns. this supports up to 26 inputs, which is fine
@@ -84,7 +84,7 @@ void gater::truthTable(Combination &combo, const std::string &title, const bool 
             std::cout << " " << *input << " |";
         }
 
-        std::cout << "  " << out << "\n";
+        std::cout << "  " << *combo.outputs[outIndex] << "\n";
     }
     std::cout << "\n";
 

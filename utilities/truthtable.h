@@ -24,11 +24,11 @@ namespace gater {
      * @brief   Displays the truth table for any Combination in the console.
      *          Supports at most 26 inputs, which will display 2^26 rows.
      * 
-     * @param   combo the Combination to display the truth table of
-     * @param   title the title of device for displaying truth table
-     * @param   out the output of the combination considered for display
+     * @param   combo Combination to display the truth table of
+     * @param   title Title of device for displaying truth table
+     * @param   outIndex Index of element in vector output of combo to display
      */
-    void truthTable(Combination &combo, const std::string &title, const bool &out);
+    void truthTable(Combination &combo, const std::string &title, int outIndex = 0);
 }
 
 #endif /* TRUTHTABLE_H */

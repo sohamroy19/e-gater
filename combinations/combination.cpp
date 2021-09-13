@@ -30,6 +30,7 @@ void Combination::addGate(std::unique_ptr<LogicGate> gate, bool addToOut) {
 }
 
 void Combination::insertInput(bool *input) {
+    // search in inputSet in O(1) time to prevent duplication in vector inputs
     if (inputSet.find(input) == inputSet.end()) {
         inputSet.insert(input);
         inputs.push_back(input);
