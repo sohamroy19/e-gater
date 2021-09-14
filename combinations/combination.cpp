@@ -38,6 +38,7 @@ void Combination::insertInput(bool *input) {
 }
 
 // generate template function implementations for all logic gates
+/// @cond exclude template instantiations from Doxygen
 template void Combination::addGate<AndGate>(std::vector<bool *>, bool, bool);
 template void Combination::addGate<OrGate>(std::vector<bool *>, bool, bool);
 template void Combination::addGate<NotGate>(std::vector<bool *>, bool, bool);
@@ -45,3 +46,4 @@ template void Combination::addGate<NandGate>(std::vector<bool *>, bool, bool);
 template void Combination::addGate<NorGate>(std::vector<bool *>, bool, bool);
 template void Combination::addGate<XorGate>(std::vector<bool *>, bool, bool);
 template void Combination::addGate<XnorGate>(std::vector<bool *>, bool, bool);
+/// @endcond

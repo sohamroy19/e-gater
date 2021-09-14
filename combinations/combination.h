@@ -34,8 +34,8 @@ public:
     void compute();
 
     /**
-     * @brief   Constructs a LogicGate object with passed inputs and
-     *          adds it to the Combination
+     * @brief   Constructs a LogicGate object with passed inputs and adds it to the
+     *          Combination. Templates manually instantiated with each LogicGate class.
      * 
      * @tparam  T Specific LogicGate implementation to be constructed
      * @param   ins Inputs for the LogicGate
