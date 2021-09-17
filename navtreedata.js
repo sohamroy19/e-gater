@@ -25,7 +25,6 @@
 var NAVTREE =
 [
   [ "e-gater", "index.html", [
-    [ "<a href=\"https://github.com/sohamroy19/e-gater\" >e-gater</a>", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
