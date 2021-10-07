@@ -1,5 +1,6 @@
 # Build directory
-build
+build/*
+!build/demo.exe
 
 # Doxygen generated files
 html
