@@ -12,7 +12,7 @@ add_subdirectory(combinations)
 add_executable(demo demo.cpp)
 
 # link libraries
-target_link_libraries(demo gatesLib utilitiesLib comboLib)
+target_link_libraries(demo -static gatesLib utilitiesLib comboLib)
 
 # include directory
 target_include_directories(demo PRIVATE include)
